@@ -1,41 +1,8 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vite.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
-
-// export default App
 
 import React, { useEffect } from 'react';
 import './App.css';
+import profileImage from './assets/profile.jpeg';
+
 
 const App = () => {
   useEffect(() => {
@@ -67,14 +34,24 @@ const App = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section
       <section className="hero">
         <div className="container fade-in">
           <h1 className="hero-title">
-            Hi, I'm Abhinaya  <span className="highlight">Developer</span> </h1>
+            Hi, I'm  <span className="highlight">Abhinaya Sapkota</span> </h1>
           <p className="hero-subtitle">Building digital experiences</p>
         </div>
+      </section> */}
+      <section className="hero">
+          <div className="container fade-in">
+            <h1 className="hero-title">
+              Hi, I'm <span className="highlight">Abhinaya Sapkota</span>
+           </h1>
+           <p className="hero-subtitle">Building digital experiences</p>
+           <img src={profileImage} alt="My Profile" className="profile-pic" />
+        </div>
       </section>
+
 
       {/* Skills Section */}
       <section id="about" className="section">

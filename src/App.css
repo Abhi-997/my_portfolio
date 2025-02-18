@@ -57,24 +57,60 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 4rem;
+  justify-content: space-between;
+  padding: 100px 0;
+  text-align: left;
+  padding-top: 8rem; /* Add padding to account for the fixed navbar */
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .hero-title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 50px; /* Adjust spacing as needed */
 }
 
 .highlight {
   color: #6c5ce7;
 }
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  color: #888;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 6rem; /* Adjust padding for smaller screens */
+  }
+
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 /* Sections */
